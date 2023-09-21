@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylehem.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="https://thumbs.dreamstime.com/z/hotel-logo-template-background-58362989.jpg" alt=""> </a>
+
+        <ul class="nav-menu">
+          
+           <li> <a href="gallery23.html" class="nav-link"><span style="color:whitesmoke"><img style="width:30px;height:30px;border-radius:50%;padding:4px"src="https://images.cdn4.stockunlimited.net/preview1300/photo-gallery-icon_1948830.jpg">Gallery</span></a> </li>
+    
+        
+           
+          <li> <a href="restaurant.html" class="nav-link"><span style="color:whitesmoke"><img style="width:30px;height:30px;border-radius:50%;padding:4px"src="https://previews.123rf.com/images/alexwhite/alexwhite1503/alexwhite150304091/37940294-eat-blue-flat-icon-restaurant-symbol.jpg">Restaurant</span></a> </li>
+                       <li> <a href="reviewtop.html" class="nav-link"><span style="color:whitesmoke"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpAludhO7DEiuVUs5LmoQhaafL7DAHrR63XA&usqp=CAU" style="width:30px;height:30px;border-radius:50%;padding:4px">Review</span></a> </li>
+                <li> <a href="loginpage.html" class="nav-link"><span style="color:whitesmoke"><img style="width:30px;height:30px;border-radius:50%;padding:4px" src="https://thumbs.dreamstime.com/z/vector-illustration-isolated-white-background-login-button-icon-126999949.jpg">Login</span></a> </li>
+                
+         
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+ <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Bellagio Las Vegas</h1>
+          <p>The Bellagio in Las Vegas does a great job at beautifully presenting its facilities – a goal that must be achieved in terms of Satisfying the customers. The presentation of the fountains of Bellagio in video format goes a long way in indulging the visitor. </p>
+          <button>MORE INFO</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="https://www.visitqatar.qa/content/dam/visitqatar/campaigns/gc/paid-campaign/backgrounds/Beach-holiday-background.jpg/_jcr_content/renditions/medium-1280px.jpeg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="https://www.visitqatar.qa/content/dam/visitqatar/campaigns/gc/paid-campaign/backgrounds/Beach-holiday-background.jpg/_jcr_content/renditions/medium-1280px.jpeg" alt="" class="slide active" onclick="img('https://www.visitqatar.qa/content/dam/visitqatar/campaigns/gc/paid-campaign/backgrounds/Beach-holiday-background.jpg/_jcr_content/renditions/medium-1280px.jpeg')">
+        <img src="https://wallpaperaccess.com/full/4685405.jpg" alt="" class="slide" onclick="img('https://wallpaperaccess.com/full/4685405.jpg')">
+        <img src="https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="slide" onclick="img('https://images.pexels.com/photos/90319/pexels-photo-90319.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')">
+        <img src="https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8&w=1000&q=80" alt="" class="slide" onclick="img('https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG90ZWx8ZW58MHx8MHx8&w=1000&q=80')">
+      </div>
+      
+    </div>
+  </section>
+   <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <section class="book">
+    <div class="container flex">
+      <div class="input grid">
+        <div class="box">
+          <label>Check-in:</label>
+          <input type="date" placeholder="Check-in-Date">
+        </div>
+        <div class="box">
+          <label>Check-out:</label>
+          <input type="date" placeholder="Check-out-Date">
+        </div>
+        <div class="box">
+          <label>Adults:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+        <div class="box">
+          <label>Children:</label> <br>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+      <div class="search">
+        <input type="submit" value="SEARCH">
+      </div>
+    </div>
+  </section>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="left">
+        <div class="img">
+          <img src="https://images.pexels.com/photos/6053693/pexels-photo-6053693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image1">
+          <img src="https://images.pexels.com/photos/1142948/pexels-photo-1142948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image2">
+        </div>
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+          <h2>Welcome to Bellagio Las Vegas Resort</h2>
+          <p>Inspired by the villages of Europe, Bellagio Resort & Casino overlooks a Mediterranean-blue lake with fountains performing a magnificent ballet.
+
+You’ll discover that when you slow down, the world will rush past you and leave you with a moment all to yourself.
+
+This is the life. </p>
+          <p>The Concierge at Bellagio can assist you in creating the most memorable experiences.Looking for billing, room service, reservations, or business services, or simply have a question? Let us help..</p>
+          <button class="btn1">READ MORE</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper top">
+    <div class="container">
+      <div class="text">
+        <h2>Our Amenities</h2>
+        <p>Our staff can help arrange your group's dining experience from start to finish! With private and semi-private dining room options, as well as availability for larger events, The Bellagio is the perfect place to celebrate your special event, meeting or reception. </p>
+
+        <div class="content">
+          <div class="box flex">
+            <i class="fas fa-swimming-pool"></i>
+            <span>Swimming pool</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-dumbbell"></i>
+            <span>Gym & yoga</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-spa"></i>
+            <span>Spa & massage</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-ship"></i>
+            <span>Boat Tours</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-swimmer"></i>
+            <span>Surfing Lessons</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-microphone"></i>
+            <span>Conference room</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-water"></i>
+            <span>Diving & smorking</span>
+          </div>
+          <div class="box flex">
+            <i class="fas fa-umbrella-beach"></i>
+            <span>Private Beach</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="room top" id="room">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>RAISING COMFORT TO THE HIGHEST LEVEL</h5>
+          <h2>Rooms & Suites</h2>
+        </div>
+        <div class="button">
+          <button class="btn1">VIEW ALL</button>
+        </div>
+      </div>
+
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="https://images.pexels.com/photos/6444974/pexels-photo-6444974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="text">
+            <h3>Superior Soble Rooms</h3>
+            <p> <span>Rs</span>12900<span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://images.pexels.com/photos/6782567/pexels-photo-6782567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="text">
+            <h3>Superior Rooms</h3>
+            <p> <span>Rs</span>20000 <span>/per night</span> </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://images.pexels.com/photos/6316054/pexels-photo-6316054.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          </div>
+          <div class="text">
+            <h3>Feel Good Rooms</h3>
+            <p> <span>Rs</span>25000 <span>/per night</span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper wrapper2 top">
+    <div class="container">
+      <div class="text">
+        <div class="heading">
+          <h5>AT THE HEART OF COMMUNICATION</h5>
+          <h2>People Say</h2>
+        </div>
+
+        <div class="para">
+          <p>Our rituals come from far-off places & ancient traditions, curated and collected to change how you view relaxation.May we suggest packing lightly? Las Vegas luxury shopping has never been presented this extravagantly. From designer boutiques to Bellagio signature shops, you're sure.... </p>
+
+          <div class="box flex">
+            <div class="img">
+              <img src="https://images.pexels.com/photos/582039/pexels-photo-582039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="name">
+              <h5>KATE PALMER</h5>
+              <h5>IDAHO</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="restaurant top" id="restaurant">
+    <div class="container flex">
+      <div class="left">
+        <img src="https://images.pexels.com/photos/1863622/pexels-photo-1863622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+      </div>
+      <div class="right">
+        <div class="text">
+          <h2>Our Restaurant</h2>
+          <p> Live, love, eat.
+Made with love.
+To live a full life, you have to fill your stomach first..</p>
+        </div>
+        <div class="accordionWrapper">
+          <div class="accordionItem open">
+            <h2 class="accordionIHeading">Italian Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>Think of a classic cook space with an overall rustic and earthy feel that features elements of the outdoors. Natural materials like wood, stone, and terra cotta reign supreme.
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Mexican Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>
+ style of mexican kitchen
+One of the main factors making Mexican food so irresistible, is that it is a blend of different cultures. Its distinct blend of spices, seasonings and vibrant colors create a beautiful presentation
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">Island Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>A kitchen island is a freestanding cabinet which can either match your existing kitchen design or compliment it. A kitchen island can have kitchen
+              </p>
+            </div>
+          </div>
+          <div class="accordionItem close">
+            <h2 class="accordionIHeading">peninsula Kitchen</h2>
+            <div class="accordionItemContent">
+              <p>A kitchen peninsula is similar to an island in that it provides additional counter space in your kitchen. The difference is that a peninsula is an extension of the existing kitchen cabinets and counters, rather than a free-standing installation
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<script>
+    var accItem = document.getElementsByClassName('accordionItem');
+    var accHD = document.getElementsByClassName('accordionIHeading');
+
+    for (i = 0; i < accHD.length; i++) {
+      accHD[i].addEventListener('click', toggleItem, false);
+    }
+
+    function toggleItem() {
+      var itemClass = this.parentNode.className;
+      for (var i = 0; i < accItem.length; i++) {
+        accItem[i].className = 'accordionItem close';
+      }
+      if (itemClass == 'accordionItem close') {
+        this.parentNode.className = 'accordionItem open';
+      }
+    }
+  </script>
+ 
+  
+
+<h1 style="color:brown;text-align:center;margin-top:4%">Find Us On <i>Google</i> Maps</h1>
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1637755481449!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+  <h1 style="color:pink:text-align:center">Developed by :--</h1>
+  <section>
+ <div class="container">
+     <div class="row">
+         <div class="col-md-3">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="https://icon2.cleanpng.com/20180920/att/kisspng-user-logo-information-service-design-5ba34f886b6700.1362345615374293844399.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Hemanth reddy.M</span>
+              <span class="profession">Web Developer</span>
+            </div>
+
+            <div class="button">
+              <a class="hemanth" href="hemanth resume.html">About Me</a>
+              </div>
+            </div></div></div></div></div>
+            
+         <div class="col-md-3">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="https://icon2.cleanpng.com/20180920/att/kisspng-user-logo-information-service-design-5ba34f886b6700.1362345615374293844399.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="name-profession">
+              <span class="name">person2</span>
+              <span class="profession">Web Developer</span>
+            </div>
+
+            <div class="button">
+              <a class="hemanth" href="person2.html">About Me</a>
+              </div>
+            </div></div></div></div></div>
+     <div class="col-md-3">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="https://icon2.cleanpng.com/20180920/att/kisspng-user-logo-information-service-design-5ba34f886b6700.1362345615374293844399.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="name-profession">
+              <span class="name">person1</span>
+              <span class="profession">Web Developer</span>
+            </div>
+
+            <div class="button">
+              <a class="hemanth" href="person1.html">About Me</a>
+              </div>
+            </div></div></div></div></div>
+            <div class="col-md-3">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper content">
+
+        <div class="swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img src="https://icon2.cleanpng.com/20180920/att/kisspng-user-logo-information-service-design-5ba34f886b6700.1362345615374293844399.jpg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="name-profession">
+              <span class="name">person3</span>
+              <span class="profession">Web Developer</span>
+            </div>
+
+            <div class="button">
+              <a class="hemanth" href="person3.html">About Me</a>
+              </div>
+            </div></div></div></div></div>
+            
+     </div>
+      </div>
+    
+    </section>
+    <div class="gi">
+         <div class="container">
+         <div class="row">
+             <div class="col-md-8">
+                <h1><i>Time for Some Fun~~    </i></h1>
+                 <img style="width:300px;height:300px;margin-top:5%;margin-left:40%" src="https://image.winudf.com/v2/image1/bmV0LnBsYXl0b3VjaC5yb2NrcGFwZXJzY2lzc29yc19pY29uXzE2Mzk5NzQ4ODdfMDU5/icon.png?w=&fakeurl=1">
+             </div>
+             <div class="col-md-4">
+                 <button style="margin-top:40%;" type="button" class="btn btn-info"><a href="game.html">Play Game</a></button>
+             </div>
+         </div>
+        
+    </div>
+    </div>
+     
+  <footer class="a">
+    <div class="container grid top">
+      <div class="box">
+        <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/48/000000/external-hotel-hotel-services-and-city-elements-flatart-icons-flat-flatarticons-1.png" />
+        <p> Get 30% Off On Weekends<br>Get 30% Off On Visa Cards <br><span style="color:chocolate">**Terms and Conditions Applied.**</span></p>
+
+        <p>Accepted payment methods</p>
+        <button type="button" class="btn btn-outline-info"><a href="payment1.html">Book now</a>
+        <span class="spinner-grow"></span>
+        </button>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>Recent News</h3>
+
+        <ul>
+          <li>Our Secret Island Boat Tour Is Just for You</li>
+          <li>Chill and Escape in Our Natural Shelters</li>
+          <li>September in <i>Las Vegas</i> Hotel</li>
+          <li>Live Music Concerts at Las Vegas</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li>About Las Vegas</li>
+          <li>Customer Care/Help</li>
+          <li>Corporate Accounts</li>
+          <li>Financial Information</li>
+          <li>Terms & Conditions</li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h3>Contact Us</h3>
+
+        <ul>
+          <li>3015 Grand Ave, Cocount Grove, Merrick Way FL 123456</li>
+          <li><i class="far fa-envelope"></i>demoexample@gmail.com </li>
+          <li><i class="far fa-phone-alt"></i>123 456 7898 </li>
+          <li><i class="far fa-phone-alt"></i>123 456 7898 </li>
+          <li><i class="far fa-comments"></i>24/ 7 Customer Services </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <footer style="font-size:30px;color:darkred;text-align:right"><marquee>@copyright/Royal Hotel</marquee></footer>
+  <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
